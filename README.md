@@ -61,10 +61,13 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
       }
     }
   ```
-7. Run locally
+7. Enable the `Google SignIn` provider in `Firebase Auth`.
+8. Run locally
    * `npm run serve` or `yarn serve`
-8. Build and deploy
+9. Build and deploy
    * `npm run deploy` or `yarn deploy`
+
+
    
 ## Technology Stack
 
