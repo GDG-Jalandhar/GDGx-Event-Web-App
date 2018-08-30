@@ -47,7 +47,20 @@ The template is created by [GDG Jalandhar](https://meetup.com/GDG-Jalandhar/) te
   }
 }
 ```
+1. Update the Firebase Real-Time Database Rules
+  ```js
+    {
+      "rules": {
+        "Next18": {
+          "$uid": {
+            ".write":"$uid === auth.uid",
+            ".read": "$uid === auth.uid"
+          },
 
+        }
+      }
+    }
+  ```
 1. Run locally
    * `npm run serve` or `yarn serve`
 1. Build and deploy
